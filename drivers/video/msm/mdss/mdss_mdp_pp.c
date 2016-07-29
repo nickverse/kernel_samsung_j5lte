@@ -2116,10 +2116,8 @@ int mdss_mdp_pp_overlay_init(struct msm_fb_data_type *mfd)
 		return -EPERM;
 	}
 
-	if (mdata->nad_cfgs) { 
 		mfd->mdp.ad_calc_bl = pp_ad_calc_bl;
 		mfd->mdp.ad_shutdown_cleanup = pp_ad_shutdown_cleanup;
-	}
 	return 0;
 }
 
